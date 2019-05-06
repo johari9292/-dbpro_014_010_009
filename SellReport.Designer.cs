@@ -1,6 +1,6 @@
 ﻿namespace MEDICAL
 {
-    partial class StockReport
+    partial class SellReport
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.GVReports = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnitemsearch = new System.Windows.Forms.Button();
             this.txtiname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btncomsearch = new System.Windows.Forms.Button();
+            this.btncustsearch = new System.Windows.Forms.Button();
             this.txtcname = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.GVReports = new System.Windows.Forms.DataGridView();
-            this.groupBox1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GVReports)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // GVReports
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(413, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(459, 65);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "STOCKIN REPORT";
+            this.GVReports.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GVReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.GVReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GVReports.DefaultCellStyle = dataGridViewCellStyle5;
+            this.GVReports.GridColor = System.Drawing.Color.DarkSeaGreen;
+            this.GVReports.Location = new System.Drawing.Point(186, 260);
+            this.GVReports.Name = "GVReports";
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Purple;
+            this.GVReports.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.GVReports.Size = new System.Drawing.Size(853, 305);
+            this.GVReports.TabIndex = 7;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnitemsearch);
             this.groupBox1.Controls.Add(this.txtiname);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btncomsearch);
+            this.groupBox1.Controls.Add(this.btncustsearch);
             this.groupBox1.Controls.Add(this.txtcname);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(196, 159);
+            this.groupBox1.Location = new System.Drawing.Point(186, 162);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(853, 89);
-            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Stock Report";
+            this.groupBox1.Text = "Sales Report";
             // 
             // btnitemsearch
             // 
@@ -102,16 +119,16 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Item Name :";
             // 
-            // btncomsearch
+            // btncustsearch
             // 
-            this.btncomsearch.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncomsearch.Location = new System.Drawing.Point(151, 49);
-            this.btncomsearch.Name = "btncomsearch";
-            this.btncomsearch.Size = new System.Drawing.Size(100, 28);
-            this.btncomsearch.TabIndex = 12;
-            this.btncomsearch.Text = "Search";
-            this.btncomsearch.UseVisualStyleBackColor = true;
-            this.btncomsearch.Click += new System.EventHandler(this.btncomsearch_Click);
+            this.btncustsearch.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncustsearch.Location = new System.Drawing.Point(151, 49);
+            this.btncustsearch.Name = "btncustsearch";
+            this.btncustsearch.Size = new System.Drawing.Size(100, 28);
+            this.btncustsearch.TabIndex = 12;
+            this.btncustsearch.Text = "Search";
+            this.btncustsearch.UseVisualStyleBackColor = true;
+            this.btncustsearch.Click += new System.EventHandler(this.btncustsearch_Click);
             // 
             // txtcname
             // 
@@ -130,39 +147,22 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(20, 24);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 19);
+            this.label6.Size = new System.Drawing.Size(126, 19);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Company Name :";
+            this.label6.Text = "Customer Name :";
             // 
-            // GVReports
+            // label1
             // 
-            this.GVReports.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GVReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.GVReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GVReports.DefaultCellStyle = dataGridViewCellStyle2;
-            this.GVReports.GridColor = System.Drawing.Color.DarkSeaGreen;
-            this.GVReports.Location = new System.Drawing.Point(196, 254);
-            this.GVReports.Name = "GVReports";
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Purple;
-            this.GVReports.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.GVReports.Size = new System.Drawing.Size(853, 305);
-            this.GVReports.TabIndex = 4;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(443, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(388, 65);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "SALES REPORT";
             // 
-            // StockReport
+            // SellReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,14 +171,13 @@
             this.Controls.Add(this.GVReports);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "StockReport";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "StockReport";
+            this.Name = "SellReport";
+            this.Text = "SellReport";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.StockReport_Load);
+            this.Load += new System.EventHandler(this.SellReport_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GVReports)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GVReports)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,14 +185,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView GVReports;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnitemsearch;
         private System.Windows.Forms.TextBox txtiname;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView GVReports;
-        private System.Windows.Forms.Button btncomsearch;
+        private System.Windows.Forms.Button btncustsearch;
         private System.Windows.Forms.TextBox txtcname;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
     }
 }

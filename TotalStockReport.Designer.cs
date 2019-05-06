@@ -1,4 +1,4 @@
-﻿namespace E_Medician
+﻿namespace MEDICAL
 {
     partial class TotalStockReport
     {
@@ -31,40 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.GVReports = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnitemsearch = new System.Windows.Forms.Button();
             this.txtiname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GVReports)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Olive;
-            this.label1.Location = new System.Drawing.Point(222, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(579, 65);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "TOTAL STOCK REPORT";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.GVReports);
-            this.groupBox1.Controls.Add(this.btnitemsearch);
-            this.groupBox1.Controls.Add(this.txtiname);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(62, 74);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(879, 366);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Total Stock Report";
             // 
             // GVReports
             // 
@@ -87,12 +62,25 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GVReports.DefaultCellStyle = dataGridViewCellStyle2;
             this.GVReports.GridColor = System.Drawing.Color.DarkSeaGreen;
-            this.GVReports.Location = new System.Drawing.Point(0, 57);
+            this.GVReports.Location = new System.Drawing.Point(18, 60);
             this.GVReports.Name = "GVReports";
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Purple;
             this.GVReports.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.GVReports.Size = new System.Drawing.Size(886, 332);
+            this.GVReports.Size = new System.Drawing.Size(1035, 332);
             this.GVReports.TabIndex = 10;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.GVReports);
+            this.groupBox1.Controls.Add(this.btnitemsearch);
+            this.groupBox1.Controls.Add(this.txtiname);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(77, 197);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1070, 405);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Total Stock Report";
             // 
             // btnitemsearch
             // 
@@ -103,6 +91,7 @@
             this.btnitemsearch.TabIndex = 15;
             this.btnitemsearch.Text = "Search";
             this.btnitemsearch.UseVisualStyleBackColor = true;
+            this.btnitemsearch.Click += new System.EventHandler(this.btnitemsearch_Click);
             // 
             // txtiname
             // 
@@ -125,19 +114,32 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Item Name :";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(343, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(579, 65);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "TOTAL STOCK REPORT";
+            // 
             // TotalStockReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 475);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(1225, 742);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "TotalStockReport";
             this.Text = "TotalStockReport";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TotalStockReport_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GVReports)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GVReports)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,11 +147,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView GVReports;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnitemsearch;
         private System.Windows.Forms.TextBox txtiname;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
